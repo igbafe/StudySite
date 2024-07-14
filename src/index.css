@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  background-color: #1a1807;
+  color: #fff;
+  font-family: Montserrat Alternates;
+}
+.navbar {
+  background-color: #1a1807;
+  justify-content: space-between;
+  margin: 10px;
+}
+.navbar-brand {
+  color: #f78b3e;
+  font-weight: bolder;
+  font-size: 32px;
+}
+.navbar-nav {
+  border-radius: 10px;
+  background-color: #31301e;
+}
+.nav-link {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+}
+.nav-link:hover{
+color: #ff995b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-item.active {
+background-color: #ff995b !important;
+color: #ffffff !important;
+border-radius: 10px;
+}
+.btn-get-started {
+  background-color: #f78b3e;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 23px, 22px, 23px, 22px;
+  width: fixed(197px);
+  height: hug(78px);
+  font-size: 20px;
+  font-weight: 450;
+}
+.btn-get-started:hover {
+  background-color: #e67a2c;
+}
+.hero-section {
+  text-align: center;
+ /* margin-top: 50px;*/
+  position: relative;
+  
+  align-items: center;
+}
+
+.img-margin {
+   margin-bottom: 10px;
+}
+
+
+.hero-text {
+  margin-bottom: 10px;
+  font-weight: 520;
+  font-size: 45px;
+  
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.image-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+}
+.image-item img {
+  display: block;
+}
+.image-1, .image-7 {
+  width: 203px;
+  height: 214px;
+}
+.image-2-3, .image-5-6 {
+  width: 176px;
+  height: 400px;
+}
+.image-4 {
+  width: 214px;
+  height: 486px;
+}
+.image-last {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  transform: translateY(-50%);
+  
+}
+.image-2-3 img:first-child, .image-5-6 img:first-child {
+  margin-bottom: 5px;
+}
+
+.background-image {
+  position: absolute;
+  right: 0;
+  top: 105%;
+  transform: translateY(-50%);
+  
+}
+.s-course {
+  background-color: #ff9e67;
+  /*color: black;*/
+  padding: 5px;
+  font-weight: 500;
+  border: none;
+ 
+}
+.deco{
+  margin-right: 0px;
+  width: 150px;
+  margin: 0px;
+  top: 50%;
+}
+.image-margin {
+  margin-right: 5px;
 }
