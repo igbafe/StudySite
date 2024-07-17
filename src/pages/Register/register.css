@@ -1,0 +1,12 @@
+.form-container {
+    font-family: 'Poppins', sans-serif;
+    background-color: #31301e;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid #ff8c66;
+    margin-top: 50px;
+}
+.btn-custom {
+    background-color: #f78b3e;
+    color: #ffffff;
+}

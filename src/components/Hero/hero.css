@@ -1,0 +1,36 @@
+.hro {
+  background-image: url(../../components/assets/images/Group\ 3.png);
+  /* max-height: 100vh; */
+  background-size: cover;
+  background-position:  center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+.hero-section {
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+  align-items: center;
+}
+
+.hero-text {
+  margin-top: 20px;
+  font-weight: 520;
+  font-size: 66px;
+}
+.heroimg {
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  padding-top: 10px;
+}
+
+.s-course {
+  background-color: #ff9e67;
+  color: black;
+  padding: 5px;
+  font-weight: 500;
+  border: none;
+}

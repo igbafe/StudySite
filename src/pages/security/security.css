@@ -1,0 +1,72 @@
+/* security.css */
+
+
+
+.section-title {
+    background-color: #ff8c66;
+    color: black;
+    font-size: 36px;
+    padding: 10px;
+    margin-top: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 360px;
+    height: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 378px);
+    grid-gap: 35px;
+    justify-content: center;
+}
+
+.info-card-wrapper {
+     background-color: inherit; /*Inherits the background color from the container */
+}
+
+.info-card {
+    background-color: #ffffff !important; /* White background with high specificity */
+    color: #2C2B2A; 
+    border-radius: 30px;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-card button {
+    background-color: #323020;
+    color: #fff;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.info-card button:hover {
+    background-color: #ff704d;
+}
+/* * {
+    background-color: #1a1807;
+} */
+.btn-custom {
+    background-color: #ff8c66;
+    color: #222222;
+    border-radius: 25px;
+    margin: 0px 20px;
+    width: 551px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    justify-content: center;
+}
