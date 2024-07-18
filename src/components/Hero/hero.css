@@ -13,18 +13,21 @@
   margin-top: 40px;
   position: relative;
   align-items: center;
+  overflow: hidden;
 }
 
 .hero-text {
   margin-top: 20px;
   font-weight: 520;
-  font-size: 66px;
+  font-size: clamp(3.7rem, 5vw, 4.8rem);
 }
 .heroimg {
-  justify-content: center;
-  align-self: center;
+  min-width: 632px;
   position: relative;
   padding-top: 10px;
+  width: 100%;
+  display: block;
+  margin: auto;
 }
 
 .s-course {
