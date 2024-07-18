@@ -6,8 +6,8 @@ import Courses from './pages/courses/courses';
 import Security from './pages/security/security';
 import Register from './pages/Register/Register';
 import ChatBot from './pages/chatbot/chatbot';
-// import Schorlarship from './pages/Scholarship/Scholarship';
-// import Scholarship from './pages/<Scholarship></Scholarship>/Scholarship'
+import Scholarship from './pages/Scholarship/Scholarship';
+
 
 function App() {
  
@@ -20,7 +20,7 @@ function App() {
           <Route path='security' element={<Security />} />
           <Route path='Register' element={<Register />} />
           <Route path='Chatbot' element={<ChatBot />} />
-          {/* <Route path='Schorlarship' element={<Schorlarship />} /> */}
+          <Route path='Scholarship' element={<Scholarship />} />
         </Route>
       </Routes>
     </Router>

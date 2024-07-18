@@ -54,7 +54,7 @@ const Register = () => {
               <label className="form-check-label" htmlFor="terms">I accept the Terms and Conditions of the Training and agree to abide by them all</label>
             </div>
             <div className="d-flex justify-content-center">
-              <button type="submit" className="btn btn-custom">Create Account</button>
+              <button type="submit" className="btn-custom  ">Create Account</button>
             </div>
           </form>
         </div>
