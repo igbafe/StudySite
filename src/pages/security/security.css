@@ -59,8 +59,8 @@
 /* * {
     background-color: #1a1807;
 } */
-.btn-custom {
-    background-color: #ff8c66;
+.btncustom {
+    /* background-color: #ff8c66; */
     color: #222222;
     border-radius: 25px;
     margin: 0px 20px;
@@ -69,4 +69,10 @@
     font-size: 24px;
     font-weight: bold;
     justify-content: center;
+}
+.btn1 {
+    background-color: #ff8c66;
+}
+.btn2 {
+    background-color: #2C2B2A;
 }

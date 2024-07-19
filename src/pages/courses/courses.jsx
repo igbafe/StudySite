@@ -65,10 +65,10 @@ const courses = () => {
       {/* Action Buttons */}
       <div className="container">
       <div className="action-buttons d-flex justify-content-between">
-        <div className="col-md-6 btn1">
+        <div className="col-md-6 ">
           <button className="btn  spaced-button"><b> Got Questions?</b></button>
         </div>
-        <div className="col-md-6 btn2">
+        <div className="col-md-6 ">
           <button className="btn  spaced-button"><b>Answer Past Questions</b></button>
         </div>
       </div>

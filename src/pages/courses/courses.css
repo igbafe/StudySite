@@ -32,6 +32,7 @@
     margin: 0 20px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .course-buttons .btn {
     margin: 5px;
@@ -39,13 +40,21 @@
     color: black;
     font-size: 18px;
     border-radius: 10px;
-    width: 156px;
+    width: 100%;
+    max-width: 156px;
     height: 56px;
     font-weight: bold;
+    flex: 1 1 auto;
   }
 
   .course-buttons .btn:active{
     background-color: #fff;
+  }
+  @media (max-width:767px) {
+    course-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   .info{
     justify-content: center;
@@ -66,7 +75,6 @@
   
   .action-buttons {
     display: flex;
-   /* justify-content: space-between;*/
     align-items: center;
     /* width: 100%; */
     text-align: center;
@@ -80,6 +88,7 @@
     font-size: 1.2rem;
     margin: 10px;
     width: 90%;
+    height: 60px;
   }
   .action-buttons .btn:hover {
     background-color: #C6B6B6;
