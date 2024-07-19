@@ -13,10 +13,12 @@
     list-style-type: none;
     margin: 0px 20px;
     font-size: 24px;
+    color: #fff;
    
   }
   .nav-link {
-    color: #fff;
+    --bs-nav-link-color: #fff;
+    
     font-size: 24px;
     margin-right: 10px;
     font-weight: bold;
@@ -34,7 +36,7 @@
   }
   .navbar-toggler-icon {
     background: #393822;
-    
+    align-self: flex-end;
   }
   .btn-get-started {
     background-color: #f78b3e;
