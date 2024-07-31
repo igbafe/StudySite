@@ -42,11 +42,11 @@ const Register = () => {
               <label htmlFor="level">Level:</label>
               <select className="form-control" id="level">
                 <option value="" disabled selected>Select your level</option>
-                <option value="100">Level 1</option>
-                <option value="200">Level 2</option>
-                <option value="300">Level 3</option>
-                <option value="400">Level 3</option>
-                <option value="500">Level 3</option>
+                <option value="level 1">100</option>
+                <option value="level 2">200</option>
+                <option value="level 3">300</option>
+                <option value="level 4">400</option>
+                <option value="level 5">500</option>
               </select>
             </div>
             <div className="form-group form-check">

@@ -52,4 +52,6 @@
   .btn-get-started:hover {
     background-color: #e67a2c;
   }
-  
+  .btn {
+    --bs-btn-bg: #ff995b;
+  }

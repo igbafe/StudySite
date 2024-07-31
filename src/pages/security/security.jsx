@@ -4,9 +4,9 @@ import './security.css';
 const SecuritySection = () => {
   return (
     <div className="container mt-1">
-      <div className="section-title">
+      {/* <div className="section-title">
         <h4><b>Security</b></h4>
-      </div>
+      </div> */}
 
       <div className="row card-container mt-3">
         <div className="col-md-6 col-lg-4 mb-2">

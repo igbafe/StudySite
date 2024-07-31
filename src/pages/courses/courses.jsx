@@ -5,14 +5,16 @@ const courses = () => {
   return (
     <div>
       <div className="Header mt-3"> {/* Content Header */}
-        <div className="content-header col-md-3">
+        {/* <div className="content-header col-md-3">
           <h2>Courses</h2>
-        </div>
+        </div> */}
 
         {/* Course Buttons */}
-        <div className="course-buttons col-md-6">
+        <div className="course-buttons col-10 ">
           <button className="btn active btn-outline-light ">CPE351</button>
           <button className="btn">CPE361</button>
+          <button className="btn ">CPE375</button>
+          <button className="btn ">CPE375</button>
           <button className="btn ">CPE375</button>
         </div>
       </div>

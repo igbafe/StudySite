@@ -20,7 +20,7 @@ const chatbot = () => {
       </div>
 
       {/* Chat Input */}
-      <div className="chat-input">
+      <div className="chat-input text-light">
         <button type="button">&#x27A4;</button>
         <input type="text" placeholder="Enter your Question" />
       </div>

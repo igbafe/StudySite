@@ -18,7 +18,10 @@ const Navbar = () => {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+      <div
+        className="collapse navbar-collapse justify-content-center"
+        id="navbarNavAltMarkup"
+      >
         <ul className="navbarnav navbar-nav  navbar-expand d-flex ">
           <li className="nav-link p-1">
             <NavLink
@@ -57,7 +60,7 @@ const Navbar = () => {
                 isActive ? "active nav-link" : "nav-link"
               }
             >
-              Scholarships
+              Opportunities
             </NavLink>
           </li>
           <li className="nav-link p-1">
@@ -70,6 +73,16 @@ const Navbar = () => {
               Security
             </NavLink>
           </li>
+          <li className="nav-link p-1">
+          <NavLink
+              className={({ isActive }) =>
+                isActive ? "active nav-link" : "nav-link"
+              }
+              to={"/DigitalSkills"}
+            >
+              Digital Skills
+            </NavLink>
+          </li>
         </ul>
       </div>
       <div>
@@ -77,7 +90,7 @@ const Navbar = () => {
           to={"/Register"}
           className={"btn btn-warning btn-get-started ml-auto"}
         >
-          Get Started
+          Login / Sign Up
         </NavLink>
       </div>
     </nav>

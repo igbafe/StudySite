@@ -3,8 +3,9 @@
     margin: 50px auto;
     background-color: #31301E;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     padding-bottom: 200px;
+    min-width: 50%;
   }
   .chat-bubble {
     max-width: 70%;
@@ -29,6 +30,8 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    color: #fff;
+    width: 100%;
   }
   .chat-input input {
     width: 100%;
@@ -36,6 +39,7 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: #ddd;
   }
   .chat-input button {
     width: 10%;

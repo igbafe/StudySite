@@ -31,11 +31,12 @@
     text-align: center;
     margin: 0 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
   }
   .course-buttons .btn {
-    margin: 5px;
+    margin: 5px 15px;
     background-color: #bcbcbc;
     color: black;
     font-size: 18px;
