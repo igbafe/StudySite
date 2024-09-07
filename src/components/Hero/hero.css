@@ -24,7 +24,7 @@
 }
 .hero-text h1 {
   font-weight: bold;
-  font-size: clamp(2.8rem, 3.8vw, 1.8rem);
+  font-size: clamp(2.8rem, 3.8vw, 1.4rem);
   margin-bottom: 0px;
 }
  .hero-text p {

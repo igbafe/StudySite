@@ -157,7 +157,7 @@ const ChatApp = () => {
           ))}
           {loading && (
             <div style={styles.botThinking}>
-              The bot is thinking...
+              ...
             </div>
           )}
           <div ref={messagesEndRef} />
