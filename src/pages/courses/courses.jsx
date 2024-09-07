@@ -1,7 +1,10 @@
 import React from 'react'
 import './courses.css'
-const courses = () => {
+import {useExampleContext} from '../../data/third';
+const Courses = () => {
    
+  const { Courses } = useExampleContext()
+  console.log(Courses);
   return (
     <div>
       <div className="Header mt-3"> {/* Content Header */}
@@ -27,7 +30,7 @@ const courses = () => {
         <div className="video-section mt-1">
           <div className="row">
             <div className="col-md-6">
-              <div className="row w-100">
+              <div className="row alone">
                 <video controls>
                   <source src="video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
@@ -79,4 +82,4 @@ const courses = () => {
   )
 }
 
-export default courses
+export default Courses

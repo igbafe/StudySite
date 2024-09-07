@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
-
+// import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 const Navbar = () => {
   return (
     <nav className="  navbar navbar-expand-lg  ">
@@ -93,6 +93,7 @@ const Navbar = () => {
           Login / Sign Up
         </NavLink>
       </div>
+      
     </nav>
   );
 };

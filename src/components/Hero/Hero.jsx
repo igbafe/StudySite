@@ -9,32 +9,24 @@ const Hero = () => {
   return (
     <div className="hro">
       <div className="hero-section container">
-        <div className=" row ">
+        <div className="row">
           <div className="d-flex justify-content-center align-items-center col-12">
-            <div className=" hero-text">
-              <h1>
-                Maximize your Undergraduate life on
-              </h1>
-              <p> <span className="s-course" span>
-                  Campus:
-                </span> study smarter, stay safer, and seize Relevant </p>
-              <p> opportunities with the help of studyboosta </p>
+            <div className="hero-text">
+              <h1>Maximize your Undergraduate life on</h1>
+              <p>
+                <span className="s-course">Campus:</span> study smarter, stay safer, and seize Relevant
+              </p>
+              <p>opportunities with the help of studyboosta</p>
             </div>
           </div>
           <div className="container">
-        <div className="image-container">
-            <img src={pict1} className="img1" alt="pict 1"/>
-            <img src={ pict4} className="img2" alt="pict 2"/>
-            <img src={pict3} className="img3" alt="pict 3"/>
-            <img src={pict2} className="img4" alt="pict 4"/>
-        </div>
-    </div>
-          <div className="  col-12 ">
-            
-          {/* <img  className="heroimg " src={heroimg} alt="heroimgage" /> */}
-          
-        </div>
-
+            <div className="image-container">
+              <img src={pict1} className="img1" alt="Image 1" />
+              <img src={pict2} className="img2" alt="Image 2" />
+              <img src={pict3} className="img3" alt="Image 3" />
+              <img src={pict4} className="img4" alt="Image 4" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

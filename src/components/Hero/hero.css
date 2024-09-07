@@ -35,14 +35,7 @@
   margin-block-end: 0em;
   font-size: clamp(1.5rem, 2vw, 1rem);
 }
-/* .heroimg {
-  min-width: 632px;
-  position: relative;
-  padding-top: 10px;
-  width: 100%;
-  display: block;
-  margin: auto;
-} */
+
 
 .s-course {
   font-weight: bold;
@@ -80,4 +73,5 @@
   width: 200px;
   height: 320px;
 }
+
 
