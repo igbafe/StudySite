@@ -21,10 +21,10 @@ const Hero = () => {
           </div>
           <div className="container">
             <div className="image-container">
-              <img src={pict1} className="img1" alt="Image 1" />
-              <img src={pict2} className="img2" alt="Image 2" />
-              <img src={pict3} className="img3" alt="Image 3" />
-              <img src={pict4} className="img4" alt="Image 4" />
+              <img src={pict1} className="img1" alt="Image1" />
+              <img src={pict2} className="img2" alt="Image2" />
+              <img src={pict3} className="img3" alt="Image3" />
+              <img src={pict4} className="img4" alt="Image4" />
             </div>
           </div>
         </div>

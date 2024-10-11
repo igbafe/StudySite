@@ -24,11 +24,7 @@ const Register = () => {
     // Clear any existing error messages
     setError("");
 
-    // Create form data object
-    // const formData = new FormData();
-    // formData.append("full_name", String(name)); // Append full name as string
-    // formData.append("email", String(email));    // Append email as string
-    // formData.append("password", String(password)); // Append password as string
+  
     const data = {
       full_name: name,
       email: email,
@@ -43,7 +39,7 @@ const Register = () => {
 
       if (response.status === 200) {
         alert("Account successfully created");
-        navigate("/");
+        navigate("/login");
       }
     } catch (error) {
       setError("Failed to create account. Please try again.");

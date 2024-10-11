@@ -38,7 +38,7 @@ const ChatApp = () => {
           }
         })
         console.log(response.data)
-        if ( response.status == 200 ) {
+        if ( response.status === 200 ) {
           const botMessage = {
             text: data.reply || "Sorry, no response from the server.",
             sender: "bot",
