@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-
+import axios from 'axios';
 const ChatApp = () => {
   const [messages, setMessages] = useState([
     { text: "How can I help you today?...", sender: "bot" },
@@ -20,46 +20,47 @@ const ChatApp = () => {
     setInputValue(e.target.value);
   };
 
-  const handleSendMessage = () => {
+  const handleSendMessage = async() => {
     if (inputValue.trim()) {
       console.log("Input Value:", inputValue);
       const userMessage = { text: inputValue, sender: "user" };
       setMessages([...messages, userMessage]);
       setInputValue("");
       setLoading(true);
-
-      fetch("https://studyboosta.onrender.com/chatbot", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ message: inputValue }),
-      })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error("Network response was not ok");
+      const data = {
+        question_form : inputValue
+      }
+      
+       try {
+        const response = await axios.post(`https://studyboosta.onrender.com/chatbot`, data,{
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
           }
-          return response.json();
         })
-        .then((data) => {
+        console.log(response.data)
+        if ( response.status == 200 ) {
           const botMessage = {
             text: data.reply || "Sorry, no response from the server.",
             sender: "bot",
           };
           setMessages((prevMessages) => [...prevMessages, botMessage]);
           setLoading(false);
-        })
-        .catch((error) => {
-          console.error("There was an error with the API request:", error);
-          let errorMessage;
-          if (error.message === "Network response was not ok") {
-            errorMessage = { text: "The request took too long. Please try again later.", sender: "bot" };
-          } else {
-            errorMessage = { text: "Sorry, there was an error processing your request.", sender: "bot" };
-          }
-          setMessages((prevMessages) => [...prevMessages, errorMessage]);
-          setLoading(false);
-        });
+          
+        }
+        
+      } catch (error) {
+        console.error("There was an error with the API request:", error);
+        let errorMessage;
+        if (error.message === "Network response was not ok") {
+          errorMessage = { text: "The request took too long. Please try again later.", sender: "bot" };
+        } else {
+          errorMessage = { text: "Sorry, there was an error processing your request.", sender: "bot" };
+        }
+        setMessages((prevMessages) => [...prevMessages, errorMessage]);
+        setLoading(false);
+       }
+
+      
     }
   };
 
@@ -90,17 +91,17 @@ const ChatApp = () => {
       alignSelf: "flex-end",
     },
     chatInput: {
-      maxWidth: "800px",
-      margin: "50px auto",
+      maxWidth: "70%",
+      minWidth: "60%",
+      margin: "40px auto",
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
       marginTop: "20px",
       color: "#fff",
-      width: "100%",
     },
     input: {
-      width: "100%",
+      width: "90%",
       backgroundColor: "#322F1E",
       padding: "10px",
       border: "1px solid #ccc",
@@ -179,10 +180,10 @@ const ChatApp = () => {
           type="button"
           onClick={handleSendMessage}
           style={styles.button}
-          aria-label="Send message"
+          aria-label="Send"
           disabled={loading}
         >
-          {loading ? "Sending..." : "Send"}
+          {loading ? "Send" : "Send"}
         </button>
       </div>
     </div>

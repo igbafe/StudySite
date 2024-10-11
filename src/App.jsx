@@ -10,10 +10,13 @@ import Register from './pages/Register/Register';
 import ChatBot from './pages/chatbot/chatbot';
 import Scholarship from './pages/Scholarship/Scholarship';
 import { Exampleprovider } from './data/third';
-
+import Login from './pages/Register/login';
+// import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
+// import { ClerkProvider } from '@clerk/clerk-react';
 export function App() {
  
   return (
+    // <ClerkProvider publishableKey="pk_test_ZW5hYmxpbmctbWFjYXctMjguY2xlcmsuYWNjb3VudHMuZ">
     <Router>
       <Exampleprovider>
       <Routes>
@@ -24,10 +27,12 @@ export function App() {
           <Route path='Register' element={<Register />} />
           <Route path='Chatbot' element={<ChatBot />} />
           <Route path='Scholarship' element={<Scholarship />} />
+          <Route path='login' element={<Login />} />
         </Route>
       </Routes>
       </Exampleprovider>
     </Router>
+    // </ClerkProvider>
   );
 }
 

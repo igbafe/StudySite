@@ -1,9 +1,10 @@
+// // import login from "./login";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // For redirection after signup
 import "./register.css"; // Import your CSS for styling
 import { Link } from "react-router-dom";
 import axios from "axios";
-const Register = () => {
+const login = () => {
   // State variables to store form inputs
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -54,23 +55,13 @@ const Register = () => {
     <div className="container">
       <div className="d-flex justify-content-center">
         <div className="form-container col-md-6">
-          <h4 className="text-center mb-4">Sign Up</h4>
+          <h4 className="text-center mb-4">Log In</h4>
 
           {/* Display error message */}
           {error && <p className="error-message">{error}</p>}
 
           <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="name">Name:</label>
-              <input
-                type="text"
-                className="form-control"
-                id="name"
-                placeholder="Enter your full name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
+            
             <div className="form-group">
               <label htmlFor="email">Email Address:</label>
               <input
@@ -94,12 +85,7 @@ const Register = () => {
               />
             </div>
 
-            <div className="form-group form-check m-1">
-              <input type="checkbox" className="form-check-input" id="terms" />
-              <label className="form-check-label" htmlFor="terms">
-                I accept the Terms and Conditions of the platform
-              </label>
-            </div>
+            
             <div className="d-flex justify-content-center">
               <button type="submit" className="btn-custom">
                 Create Account
@@ -108,8 +94,8 @@ const Register = () => {
 
             <div className="d-flex justify-content-center mt-2">
               <p>
-                Already have an account?
-                <Link to="/login">Log in</Link>
+               New to StudyBoosta?
+                <Link to="/Register">Create an account here</Link>
               </p>
             </div>
           </form>
@@ -119,4 +105,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default login;

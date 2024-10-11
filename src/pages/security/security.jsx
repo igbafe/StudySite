@@ -36,7 +36,7 @@ const SecuritySection = () => {
       </div>
 
       <div className="d-flex justify-content-center mt-1 flex-wrap">
-        <button className="btn1 btncustom m-2 px-5 py-3">Contact Campus Security</button>
+        <button className="btn1 btncustom m-2 px-5 py-3 spaced-button">Contact Campus Security</button>
         <button className=" btncustom m-2 px-5 py-3">Contact Campus Hospital</button>
       </div>
     </div>

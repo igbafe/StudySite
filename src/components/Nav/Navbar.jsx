@@ -80,12 +80,10 @@ const Navbar = () => {
               }
               to={"/DigitalSkills"}
             >
-              Digital Skills
+              DigitalSkills
             </NavLink>
           </li>
-        </ul>
-      </div>
-      <div>
+          <div>
         <NavLink
           to={"/Register"}
           className={"btn btn-warning btn-get-started ml-auto"}
@@ -93,6 +91,9 @@ const Navbar = () => {
           Login / Sign Up
         </NavLink>
       </div>
+        </ul>
+      </div>
+      
       
     </nav>
   );
