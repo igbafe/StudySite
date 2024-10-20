@@ -75,13 +75,13 @@ const Courses = () => {
         </div>
         <div className="course-buttons col-6">
           <button
-            className="btn active btn-outline-light"
+            className="btn "
             onClick={() => handleCourseButtonClick("CPE351")}
           >
             CPE351
           </button>
           <button
-            className="btn"
+            className="btn active btn-outline-light"
             onClick={() => handleCourseButtonClick("CPE361")}
           >
             CPE361
@@ -108,7 +108,7 @@ const Courses = () => {
             <div className="col-md-6">
               <div className="row alone">
                 <iframe
-                  src="https://www.youtube.com/embed/oPIfXFOFy1U"
+                  src="https://www.youtube.com/embed/FFDMzbrEXaE"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -120,7 +120,7 @@ const Courses = () => {
               <div className="row mt-3">
                 <div className="col-md-4">
                   <iframe
-                    src="https://www.youtube.com/embed/0BRjXG6B3-w"
+                    src="https://www.youtube.com/embed/crSGS1uBSNQ"
                     title="YouTube video 2"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -131,7 +131,7 @@ const Courses = () => {
                 </div>
                 <div className="col-md-4">
                   <iframe
-                    src="https://www.youtube.com/embed/ZUXG9eZfSlw"
+                    src="https://www.youtube.com/embed/JQBRzsPhw2w"
                     title="YouTube video 3"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -142,7 +142,7 @@ const Courses = () => {
                 </div>
                 <div className="col-md-4">
                   <iframe
-                    src="https://www.youtube.com/embed/7jw2_x8dyQ8?"
+                    src="https://www.youtube.com/embed/INEtYZqtjTo"
                     title="YouTube video 4"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -155,11 +155,11 @@ const Courses = () => {
             </div>
             <div className="col-md-6 course-des justify-content-center">
             <h4>
-                <b>CPE 351</b>
+                <b>CPE 361</b>
               </h4>
-              <h5>Analogue Electronic Circuit</h5>
+              <h5>Digital Electronic Circuit</h5>
               <p>
-                This is an introduction video to your course CPE 351(Analogue Electronic Circuit) Access
+                This is an introduction video to your course CPE 361(Digital Electronic Circuit). Access
                 other lecture videos once you're done with the introductory
                 video.
               </p>

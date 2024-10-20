@@ -11,6 +11,9 @@ import ChatBot from './pages/chatbot/chatbot';
 import Scholarship from './pages/Scholarship/Scholarship';
 import { Exampleprovider } from './data/third';
 import Login from './pages/Register/login';
+import CPE361 from './pages/courses/CPE361';
+import CPE375 from './pages/courses/CPE375';
+import ComingSoon from './pages/comingsoon/comingsoon';
 // import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 // import { ClerkProvider } from '@clerk/clerk-react';
 export function App() {
@@ -28,6 +31,9 @@ export function App() {
           <Route path='Chatbot' element={<ChatBot />} />
           <Route path='Scholarship' element={<Scholarship />} />
           <Route path='login' element={<Login />} />
+          <Route path='CPE361' element={<CPE361 />} />
+          <Route path='CPE375' element={<CPE375 />} />
+          <Route path='ComingSoon' element={<ComingSoon />} />
         </Route>
       </Routes>
       </Exampleprovider>
