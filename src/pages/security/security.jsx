@@ -26,7 +26,9 @@ const SecuritySection = () => {
               Daily Campus Update. Know what's happening before you step out of
               your hostel
             </p>
-            <button className="btn btn-primary">Click Here</button>
+            <button className="btn">
+              <Link to="/ComingSoon">Click Here</Link>
+            </button>
           </div>
         </div>
         <div className="col-md-6 col-lg-4 mb-2">

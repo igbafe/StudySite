@@ -1,4 +1,4 @@
-.join-button {
+/* .join-button {
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -10,5 +10,53 @@
   
   .join-button:hover {
     background-color: #3e8e41;
+  } */
+  .coming-soon-container {
+    display: flex;
+    margin: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    background: url(../../components/assets/images/cb62414c-ef87-4cb8-ba5c-c70d4e3ddfbc.webp) no-repeat center center/cover;
+    color: #333;
   }
   
+  .content {
+    margin-top: auto;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+  }
+  
+  .notify-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .notify-btn:hover {
+    background-color: #444;
+  }
+  
+  .footer {
+    margin-top: auto;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    color: #666;
+  }
