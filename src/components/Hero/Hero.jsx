@@ -11,13 +11,19 @@ const Hero = () => {
       <div className="hero-section container">
         <div className="row">
           <div className="d-flex justify-content-center align-items-center col-12">
-            <div className="hero-text">
-              <h1>What’s Holding You Back from Reaching Your Full Potential as a Student?"</h1>
+            <div className="her-text">
+              <h6>"What’s Holding You Back from Reaching</h6>
+              <h6>Your Full Potential as a Student?"</h6>
+              <p>StudyBoosta is your one click to open doors you didn’t know</p>
               <p>
-                <span className="s-course">Campus:</span> StudyBoosta is your one click to open doors you didn’t know existed. Transform your university experience with easy access to your past questions, simplified course tutorials, exclusive scholarship and internship updates, and essential digital skills. We’re here to fuel your success every step of the way.
-
+                existed. Transform your university experience with easy access 
               </p>
-              <p>opportunities with the help of studyboosta</p>
+              <p>to your past questions, simplified course tutorials, exclusive
+                </p>
+                <p>scholarship and internship updates, and essential digital
+                </p>
+                <p>skills. We’re here to fuel your success every step of the way.</p>
+                
             </div>
           </div>
           <div className="container">
