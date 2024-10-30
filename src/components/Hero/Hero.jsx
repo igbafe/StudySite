@@ -12,9 +12,10 @@ const Hero = () => {
         <div className="row">
           <div className="d-flex justify-content-center align-items-center col-12">
             <div className="hero-text">
-              <h1>Maximize your Undergraduate life on</h1>
+              <h1>What’s Holding You Back from Reaching Your Full Potential as a Student?"</h1>
               <p>
-                <span className="s-course">Campus:</span> study smarter, stay safer, and seize Relevant
+                <span className="s-course">Campus:</span> StudyBoosta is your one click to open doors you didn’t know existed. Transform your university experience with easy access to your past questions, simplified course tutorials, exclusive scholarship and internship updates, and essential digital skills. We’re here to fuel your success every step of the way.
+
               </p>
               <p>opportunities with the help of studyboosta</p>
             </div>

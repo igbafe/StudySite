@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./courses.css";
 // import { useExampleContext } from "../../data/third";
-import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
+import { useNavigate, Link } from "react-router-dom"; // Import useNavigate for navigation
 // import { Link } from "react-router-dom";
 const Courses = () => {
   // const { Courses } = useExampleContext();
@@ -66,12 +66,49 @@ const Courses = () => {
       navigate("/cpe375"); // Navigate to internal page for CPE375
     }
   };
+  // // State to manage the dropdown visibility
+  // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  // // Toggle dropdown visibility
+  // const toggleDropdown = () => {
+  //   setIsDropdownOpen((prev) => !prev);
+  // };
+
+  // // Handle navigation to different pages from dropdown items
+  // const handleDropdownNavigation = (path) => {
+  //   navigate(path);
+  // };
+  // State to manage dropdown visibility
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Toggle dropdown visibility
+  const toggleDropdown = () => {
+    setIsOpen((prevIsOpen) => !prevIsOpen);
+  };
 
   return (
     <div>
       <div className="Header mt-3 justify-content-center">
-        <div className="content-header col-md-3">
-          <h2><b>CPE 300</b></h2>
+      <div className="content-header header-container col-md-3" >
+      <div className="dropdown">
+      <div className="dropdown-btn" onClick={toggleDropdown}>
+       CPE300
+        <span>{isOpen ? '▲' : '▼'}</span>
+
+      </div>
+      {isOpen && (
+        <div className="dropdown-content">
+           <Link to="/courses" className="dropdown-item" onClick={toggleDropdown}>
+            CPE300
+          </Link>
+          <Link to="/CPE500" className="dropdown-item" onClick={toggleDropdown}>
+            CPE500
+          </Link>
+        </div>
+      )}
+    </div>
+         
+          
         </div>
         <div className="course-buttons col-6">
           <button
@@ -113,7 +150,7 @@ const Courses = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   width="100%"
-                  height="315"
+                  height="250"
                   frameBorder="0"
                 ></iframe>
               </div>
@@ -125,7 +162,7 @@ const Courses = () => {
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     width="100%"
-                    height="315"
+                    height="200"
                     frameBorder="0"
                   ></iframe>
                 </div>
@@ -136,7 +173,7 @@ const Courses = () => {
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     width="100%"
-                    height="315"
+                    height="200"
                     frameBorder="0"
                   ></iframe>
                 </div>
@@ -147,7 +184,7 @@ const Courses = () => {
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     width="100%"
-                    height="315"
+                    height="200"
                     frameBorder="0"
                   ></iframe>
                 </div>

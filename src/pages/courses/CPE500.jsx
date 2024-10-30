@@ -1,8 +1,8 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "./courses.css";
 // import { useExampleContext } from "../../data/third";
-import { useNavigate, Link } from "react-router-dom";// Import useNavigate for navigation
+import { useNavigate, Link } from "react-router-dom"; // Import useNavigate for navigation
 // import { Link } from "react-router-dom";
 const Courses = () => {
   // const { Courses } = useExampleContext();
@@ -38,6 +38,7 @@ const Courses = () => {
       setLoadingSend(false);
     }
   };
+  
 
   // Function to fetch data (for 'Answer Past Questions' button)
   const handleFetchData = async () => {
@@ -57,15 +58,27 @@ const Courses = () => {
 
   // Functions to handle course button navigation
   const handleCourseButtonClick = (courseId) => {
-    if (courseId === "CPE351") {
-      navigate("/courses"); // Navigate to internal page for CPE351
-    } else if (courseId === "CPE361") {
-      navigate("/cpe361"); // Navigate to internal page for CPE361
-    } else if (courseId === "CPE375") {
-      navigate("/cpe375"); // Navigate to internal page for CPE375
+    if (courseId === "CPE551") {
+      navigate("/cpe500"); // Navigate to internal page for CPE351
+    } else if (courseId === "CPE531") {
+      navigate("/cpe531"); // Navigate to internal page for CPE361
+    } else if (courseId === "CPE553") {
+      navigate("/cpe553"); // Navigate to internal page for CPE375
     }
   };
+  // // State to manage the dropdown visibility
+  // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  // // Toggle dropdown visibility
+  // const toggleDropdown = () => {
+  //   setIsDropdownOpen((prev) => !prev);
+  // };
+
+  // // Handle navigation to different pages from dropdown items
+  // const handleDropdownNavigation = (path) => {
+  //   navigate(path);
+  // };
+  // State to manage dropdown visibility
   const [isOpen, setIsOpen] = useState(false);
 
   // Toggle dropdown visibility
@@ -76,51 +89,45 @@ const Courses = () => {
   return (
     <div>
       <div className="Header mt-3 justify-content-center">
-        <div className="content-header header-container col-md-3">
-          <div className="dropdown">
-            <div className="dropdown-btn" onClick={toggleDropdown}>
-              CPE300
-              <span>{isOpen ? "▲" : "▼"}</span>
-            </div>
-            {isOpen && (
-              <div className="dropdown-content">
-                <Link
-                  to="/courses"
-                  className="dropdown-item"
-                  onClick={toggleDropdown}
-                >
-                  CPE300
-                </Link>
-                <Link
-                  to="/CPE500"
-                  className="dropdown-item"
-                  onClick={toggleDropdown}
-                >
-                  CPE500
-                </Link>
-              </div>
-            )}
-          </div>
+      <div className="content-header header-container col-md-3" >
+      <div className="dropdown">
+      <div className="dropdown-btn" onClick={toggleDropdown}>
+        CPE500
+        <span>{isOpen ? '▲' : '▼'}</span>
+
+      </div>
+      {isOpen && (
+        <div className="dropdown-content">
+           <Link to="/courses" className="dropdown-item" onClick={toggleDropdown}>
+            CPE300
+          </Link>
+          <Link to="/CPE500" className="dropdown-item" onClick={toggleDropdown}>
+            CPE500
+          </Link>
+        </div>
+      )}
+    </div>
+          
         </div>
         <div className="course-buttons col-6">
           <button
-            className="btn "
-            onClick={() => handleCourseButtonClick("CPE351")}
+            className="btn active btn-outline-light"
+            onClick={() => handleCourseButtonClick("CPE551")}
           >
-            CPE351
+            CPE551
           </button>
           <button
-            className="btn active btn-outline-light"
-            onClick={() => handleCourseButtonClick("CPE361")}
+            className="btn"
+            onClick={() => handleCourseButtonClick("CPE531")}
           >
-            CPE361
+            CPE531
           </button>
 
           <button
             className="btn"
-            onClick={() => handleCourseButtonClick("CPE375")}
+            onClick={() => handleCourseButtonClick("CPE553")}
           >
-            CPE375
+            CPE553
           </button>
         </div>
       </div>
@@ -137,7 +144,7 @@ const Courses = () => {
             <div className="col-md-6">
               <div className="row alone">
                 <iframe
-                  src="https://www.youtube.com/embed/FFDMzbrEXaE"
+                  src="https://www.youtube.com/embed/4hVWXQEVYSA"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -149,7 +156,7 @@ const Courses = () => {
               <div className="row mt-3">
                 <div className="col-md-4">
                   <iframe
-                    src="https://www.youtube.com/embed/crSGS1uBSNQ"
+                    src="https://www.youtube.com/embed/7OS1wVx4634"
                     title="YouTube video 2"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -160,7 +167,7 @@ const Courses = () => {
                 </div>
                 <div className="col-md-4">
                   <iframe
-                    src="https://www.youtube.com/embed/JQBRzsPhw2w"
+                    src="https://www.youtube.com/embed/iQaFDpiNOlA"
                     title="YouTube video 3"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -171,7 +178,7 @@ const Courses = () => {
                 </div>
                 <div className="col-md-4">
                   <iframe
-                    src="https://www.youtube.com/embed/INEtYZqtjTo"
+                    src="https://www.youtube.com/embed/XyZerq7-IvA?"
                     title="YouTube video 4"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -183,14 +190,14 @@ const Courses = () => {
               </div>
             </div>
             <div className="col-md-6 course-des justify-content-center">
-              <h4>
-                <b>CPE 361</b>
+            <h4>
+                <b>CPE 551</b>
               </h4>
-              <h5>Digital Electronic Circuit</h5>
+              <h5>Digital Signal Processing</h5>
               <p>
-                This is an introduction video to your course CPE 361(Digital
-                Electronic Circuit). Access other lecture videos once you're
-                done with the introductory video.
+                This is an introduction video to your course CPE 551(Digital Signal Processing) Access
+                other lecture videos once you're done with the introductory
+                video.
               </p>
             </div>
           </div>
@@ -198,7 +205,7 @@ const Courses = () => {
       </div>
 
       {/* Action Buttons */}
-      <div className="container">
+      <div className="container ">
         <div className="action-buttons d-flex justify-content-between">
           {/* 'Got Questions?' button to send data */}
           <div className="col-md-6">

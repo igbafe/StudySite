@@ -37,7 +37,9 @@ const SecuritySection = () => {
               Reduce Clearance Stress and know what exactly is needed all
               through your clearance process
             </p>
-            <button className="btn btn-primary">Click Here</button>
+            <button className="btn btn-primary">
+              <Link to="/ComingSoon">Click Here</Link>
+            </button>
           </div>
         </div>
         <div className="col-md-6 col-lg-4 mb-2">
@@ -46,7 +48,9 @@ const SecuritySection = () => {
               Are you a fresher? Keep yourself updated with the University
               orientation & regulations
             </p>
-            <button className="btn btn-primary">Click Here</button>
+            <button className="btn btn-primary">
+            <Link to="/ComingSoon">Click Here</Link>
+            </button>
           </div>
         </div>
       </div>
