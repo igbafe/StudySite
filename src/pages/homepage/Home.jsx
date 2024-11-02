@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import Hero from "../../components/Hero/Hero";
-import './homepage.css';
+=======
+import React from "react";
+import pict1 from "../../components/assets/images/read.jpg";
+import { FaBookOpen, FaBrain, FaBriefcase } from "react-icons/fa";
+>>>>>>> 7fb6265ee69713e473bcad9332b59515817f58fa
 
 import { Link } from "react-router-dom";
 const HomePage = () => {
