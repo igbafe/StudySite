@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="d-flex justify-content-center align-items-center col-12">
             <div className="her-text">
               <h6>"What’s Holding You Back from Reaching</h6>
-              <h6>Your Full Potential as a Student?"</h6>
+              <h6 className="mb-4">Your Full Potential as a Student?"</h6>
               <p>StudyBoosta is your one click to open doors you didn’t know</p>
               <p>
                 existed. Transform your university experience with easy access 
@@ -22,7 +22,7 @@ const Hero = () => {
                 </p>
                 <p>scholarship and internship updates, and essential digital
                 </p>
-                <p>skills. We’re here to fuel your success every step of the way.</p>
+                <p className="mb-4">skills. We’re here to fuel your success every step of the way.</p>
                 
             </div>
           </div>

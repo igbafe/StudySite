@@ -38,7 +38,6 @@ const Courses = () => {
       setLoadingSend(false);
     }
   };
-  
 
   // Function to fetch data (for 'Answer Past Questions' button)
   const handleFetchData = async () => {
@@ -89,26 +88,31 @@ const Courses = () => {
   return (
     <div>
       <div className="Header mt-3 justify-content-center">
-      <div className="content-header header-container col-md-3" >
-      <div className="dropdown">
-      <div className="dropdown-btn" onClick={toggleDropdown}>
-       CPE300
-        <span>{isOpen ? '▲' : '▼'}</span>
-
-      </div>
-      {isOpen && (
-        <div className="dropdown-content">
-           <Link to="/courses" className="dropdown-item" onClick={toggleDropdown}>
-            CPE300
-          </Link>
-          <Link to="/CPE500" className="dropdown-item" onClick={toggleDropdown}>
-            CPE500
-          </Link>
-        </div>
-      )}
-    </div>
-         
-          
+        <div className="content-header header-container col-md-3">
+          <div className="dropdown">
+            <div className="dropdown-btn" onClick={toggleDropdown}>
+              LEVEL
+              <span>{isOpen ? "▲" : "▼"}</span>
+            </div>
+            {isOpen && (
+              <div className="dropdown-content">
+                <Link
+                  to="/courses"
+                  className="dropdown-item"
+                  onClick={toggleDropdown}
+                >
+                  CPE300
+                </Link>
+                <Link
+                  to="/CPE500"
+                  className="dropdown-item"
+                  onClick={toggleDropdown}
+                >
+                  CPE500
+                </Link>
+              </div>
+            )}
+          </div>
         </div>
         <div className="course-buttons col-6">
           <button
@@ -191,14 +195,14 @@ const Courses = () => {
               </div>
             </div>
             <div className="col-md-6 course-des justify-content-center">
-            <h4>
+              <h4>
                 <b>CPE 351</b>
               </h4>
               <h5>Analogue Electronic Circuit</h5>
               <p>
-                This is an introduction video to your course CPE 351(Analogue Electronic Circuit) Access
-                other lecture videos once you're done with the introductory
-                video.
+                This is an introduction video to your course CPE 351(Analogue
+                Electronic Circuit) Access other lecture videos once you're done
+                with the introductory video.
               </p>
             </div>
           </div>

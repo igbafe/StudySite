@@ -92,7 +92,7 @@ const Courses = () => {
       <div className="content-header header-container col-md-3" >
       <div className="dropdown">
       <div className="dropdown-btn" onClick={toggleDropdown}>
-        CPE500
+        LEVEL
         <span>{isOpen ? '▲' : '▼'}</span>
 
       </div>
