@@ -14,16 +14,17 @@ const Hero = () => {
             <div className="her-text">
               <h6>"What’s Holding You Back from Reaching</h6>
               <h6 className="mb-4">Your Full Potential as a Student?"</h6>
-              <p>StudyBoosta is your one click to open doors you didn’t know</p>
-              <p>
-                existed. Transform your university experience with easy access 
+              <p className="mb-4">
+                StudyBoosta is your one click to open doors you didn’t know{" "}
+                <br />
+                existed. Transform your university experience with easy access{" "}
+                <br />
+                to your past questions, simplified course tutorials, exclusive
+                <br />
+                scholarship and internship updates, and essential digital
+              <br/>
+                skills. We’re here to fuel your success every step of the way.
               </p>
-              <p>to your past questions, simplified course tutorials, exclusive
-                </p>
-                <p>scholarship and internship updates, and essential digital
-                </p>
-                <p className="mb-4">skills. We’re here to fuel your success every step of the way.</p>
-                
             </div>
           </div>
           <div className="container">
