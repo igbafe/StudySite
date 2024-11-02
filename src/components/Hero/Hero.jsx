@@ -15,14 +15,10 @@ const Hero = () => {
               <h6>"What’s Holding You Back from Reaching</h6>
               <h6 className="mb-4">Your Full Potential as a Student?"</h6>
               <p className="mb-4">
-                StudyBoosta is your one click to open doors you didn’t know{" "}
-                <br />
-                existed. Transform your university experience with easy access{" "}
-                <br />
+                StudyBoosta is your one click to open doors you didn’t know
+                existed. Transform your university experience with easy access
                 to your past questions, simplified course tutorials, exclusive
-                <br />
                 scholarship and internship updates, and essential digital
-              <br/>
                 skills. We’re here to fuel your success every step of the way.
               </p>
             </div>

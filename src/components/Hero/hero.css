@@ -29,16 +29,24 @@
   font-size: clamp(2.0rem, 2.8vw, 0.2rem);
   margin-bottom: 10px;
 }
- .her-text p {
+.her-text p {
   color: #f78b3e;
-  /* font-size: 1.5rem; */
   margin-top: 15px;
   margin-block-start: 0em;
   margin-block-end: 0em;
   font-size: clamp(1.2rem, 1.8vw, 0.2rem);
   font-style: italic;
   padding: 10px;
+  max-width: 600px; /* Adjust this value as needed */
+  width: 100%;
 }
+
+@media (max-width: 768px) {
+  .her-text p {
+    max-width: 90%; /* Adjust based on your preference */
+  }
+}
+
 
 
 .s-course {
