@@ -8,78 +8,91 @@ const CourseList = () => {
 
   const courseItems = [
     {
-        title: "Introduction to DC machines and their operation",
-        type: "Video",
-        duration: "30 min",
-        videoUrl: "https://www.youtube.com/embed/0gWJ8OqkpHM",
-      },
-      {
-        title: "Synchronous alternators explained",
-        type: "Video",
-        duration: "6 min",
-        videoUrl: "https://www.youtube.com/embed/Hn3FkCOPuos",
-      },
-  
-      {
-        title: "Understanding three-phase balanced circuits",
-        type: "Video",
-      duration: "11 min",
-      videoUrl: "https://www.youtube.com/embed/DF9TMhj4goo",
+      title: "Introduction to position and reference frames in mechanics",
+      type: "Video",
+      duration: "7 min",
+      videoUrl: "https://www.youtube.com/embed/NxAvWfs92U4",
     },
     {
-      title: "Three-phase power system basics",
+      title: "Types of coordinate systems in engineering mechanics",
+      type: "Video",
+      duration: "11 min",
+      videoUrl: "https://www.youtube.com/embed/2-xHwk7rB94",
+    },
+
+    {
+      title: "Scalar vs vector functions in engineering",
+      type: "Video",
+      duration: "23 min",
+      videoUrl: "https://www.youtube.com/embed/haJVEtLN6-k",
+    },
+    {
+      title: "Differentiation of functions in mechanics",
+      type: "Video",
+      duration: "9 min",
+      videoUrl: "https://www.youtube.com/embed/pFeuGMMiZWw",
+    },
+    {
+      title: "Understanding relative motion in mechanics",
+      type: "Video",
+      duration: "7 min",
+      videoUrl: "https://www.youtube.com/embed/UcY5Gx_WMvI",
+    },
+    {
+      title: "Kinetics of rigid bodies",
+      type: "Video",
+      duration: "55 min",
+      videoUrl: "https://www.youtube.com/embed/IpH2NyaB9JU",
+    },
+    {
+      title: "Translation and rotation of rigid bodies about a fixed axis",
+      type: "Video",
+      duration: "17 min",
+      videoUrl: "https://www.youtube.com/embed/VnzsQmP6eMQ",
+    },
+    {
+      title: "2D motion of rigid bodies",
       type: "Video",
       duration: "10 min",
-      videoUrl: "https://www.youtube.com/embed/iMn7dq7B1oo",
+      videoUrl: "https://www.youtube.com/embed/4LsLy9iJKFA",
     },
     {
-      title: "Working of PN junction diode",
+      title: "Vectorial and non-vectorial methods in mechanics",
       type: "Video",
-      duration: "15 min",
-      videoUrl: "https://www.youtube.com/embed/USrY0JspDEg",
+      duration: "59 min",
+      videoUrl: "https://www.youtube.com/embed/8cyYqzlvSmg",
     },
     {
-      title: "Transistor basics and types",
+      title: "Impulse & Momentum ",
       type: "Video",
-      duration: "18 min",
-      videoUrl: "https://www.youtube.com/embed/J4oO7PT_nzQ",
+      duration: "8 min",
+      videoUrl: "https://www.youtube.com/embed/bl2gEps8pEk",
     },
     {
-      title: "How Zener diodes work",
+      title: "Moment of inertia explained",
       type: "Video",
-      duration: "11 min",
-      videoUrl: "https://www.youtube.com/embed/mmiHX_IzvDw",
+      duration: "24 min",
+      videoUrl: "https://www.youtube.com/embed/NuZ27LgNeN8",
+    },
+
+    {
+      title: "Simple harmonic motion in engineering",
+      type: "Video",
+      duration: "14 min",
+      videoUrl: "https://www.youtube.com/embed/_Gnke2x3vT8",
     },
     {
-        title: "Half-wave and full-wave rectifier circuits",
-        type: "Video",
-        duration: "14 min",
-        videoUrl: "https://www.youtube.com/embed/joDlqsknn-w",
-      },
-      {
-        title: "What is a Field Effect Transistor (FET)?",
-        type: "Video",
-        duration: "8 min",
-        videoUrl: "https://www.youtube.com/embed/cOICDYuY-gA",
-      },
-      {
-        title: "Open vs. closed loop control systems",
-        type: "Video",
-        duration: "11 min",
-        videoUrl: "https://www.youtube.com/embed/XMfH2P2Fc6Q",
-      },
-      {
-        title: "Open vs. closed loop control systems 2",
-        type: "Video",
-        duration: "4 min",
-        videoUrl: "https://www.youtube.com/embed/DE0hWLdkckg",
-      },
-      {
-        title: "Open vs. closed loop control systems 3",
-        type: "Video",
-        duration: "5 min",
-        videoUrl: "https://www.youtube.com/embed/8m0VP5_feOY",
-      },
+      title: "Kinematics of SHM",
+      type: "Video",
+      duration: "10 min",
+      videoUrl: "https://www.youtube.com/embed/Pj_2tiDmLHA",
+    },
+    {
+      title: "SHM properties and applications",
+      type: "Video",
+      duration: "30 min",
+      videoUrl: "https://www.youtube.com/embed/zI0Qgq5x1ok",
+    },
   ];
 
   const handleVideoToggle = (index) => {
@@ -145,7 +158,7 @@ const CourseList = () => {
         </div>
         <div className="course-buttons col-6">
           <button
-            className="btn  active btn-outline-light"
+            className="btn"
             onClick={() => handleCourseButtonClick("EEE212")}
           >
             EEE212
@@ -158,7 +171,7 @@ const CourseList = () => {
           </button>
 
           <button
-            className="btn"
+            className="btn active btn-outline-light"
             onClick={() => handleCourseButtonClick("MEE212")}
           >
             MEE212
@@ -173,13 +186,13 @@ const CourseList = () => {
             <h4>
               <b>MEE212</b>
             </h4>
-            <h5>Electrical Engineering 2</h5>
+            <h5>Engineering Mechanics 2</h5>
             <p>
-              Welcome to Electrical Engineering 2, a continuation of your
-              foundational studies in electrical engineering. This course will
-              delve into complex circuits, network theorems, and the behavior of
-              AC and DC systems to enhance your analytical and problem-solving
-              skills.
+              Welcome to Engineering Mechanics 2, a fundamental course focusing
+              on the principles of dynamics. This course will help you
+              understand the motion of bodies under the influence of forces,
+              covering topics such as kinematics, kinetics, impulse, and
+              momentum for practical engineering applications
             </p>
           </div>
 
@@ -247,36 +260,28 @@ const CourseList = () => {
           </div>
         </div>
       </div>
-      <div
-        className="container text-center d-flex flex-column justify-content-center align-items-center"
-        style={{ padding: "20px" }}
-      >
-        <p style={{ fontSize: "16px", fontWeight: "600", color: "white" }}>
-          Do you have a topic you'd like us to add that isn't covered yet? Click
-          below to let us know!
-        </p>
-
-        <a
-          href="https://forms.gle/o5jQA5jbegCBAKSB6 "
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button
-            className="btn"
-            style={{
-              backgroundColor: "#FF944D",
-              color: "black",
-              fontSize: "20px",
-              padding: "12px 24px",
-              borderRadius: "8px",
-              marginTop: "20px",
-              fontWeight: 500,
-            }}
-          >
-            Request a New Topic
-          </button>
-        </a>
-      </div>
+      <div className="container text-center d-flex flex-column justify-content-center align-items-center" style={{ padding: "20px" }}>
+  <p style={{ fontSize: "16px", fontWeight: "600", color: "white" }}>
+    Do you have a topic you'd like us to add that isn't covered yet? Click below to let us know!
+  </p>
+  
+  <a href="https://forms.gle/o5jQA5jbegCBAKSB6 " target="_blank" rel="noopener noreferrer">
+  <button
+    className="btn"
+    style={{
+      backgroundColor: "#FF944D",
+      color: "black",
+      fontSize: "20px",
+      padding: "12px 24px",
+      borderRadius: "8px",
+      marginTop: "20px",
+      fontWeight: 500,
+    }}
+  >
+    Request a New Topic
+  </button>
+</a>
+</div>
     </div>
   );
 };

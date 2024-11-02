@@ -55,7 +55,7 @@ const Navbar = () => {
           </li>
           <li className="nav-link p-1">
             <NavLink
-              to={"/opportunities"}
+              to={"/Scholarship"}
               className={({ isActive }) =>
                 isActive ? "active nav-link" : "nav-link"
               }

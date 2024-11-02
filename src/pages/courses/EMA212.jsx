@@ -8,78 +8,49 @@ const CourseList = () => {
 
   const courseItems = [
     {
-        title: "Introduction to DC machines and their operation",
-        type: "Video",
-        duration: "30 min",
-        videoUrl: "https://www.youtube.com/embed/0gWJ8OqkpHM",
-      },
-      {
-        title: "Synchronous alternators explained",
-        type: "Video",
-        duration: "6 min",
-        videoUrl: "https://www.youtube.com/embed/Hn3FkCOPuos",
-      },
-  
-      {
-        title: "Understanding three-phase balanced circuits",
-        type: "Video",
-      duration: "11 min",
-      videoUrl: "https://www.youtube.com/embed/DF9TMhj4goo",
-    },
-    {
-      title: "Three-phase power system basics",
+      title: "Introduction to second-order differential equations",
       type: "Video",
-      duration: "10 min",
-      videoUrl: "https://www.youtube.com/embed/iMn7dq7B1oo",
+      duration: "19 min",
+      videoUrl: "https://www.youtube.com/embed/FrF1QBP8ejo",
     },
     {
-      title: "Working of PN junction diode",
+      title: "How to solve homogeneous second-order differential equations",
       type: "Video",
-      duration: "15 min",
-      videoUrl: "https://www.youtube.com/embed/USrY0JspDEg",
+      duration: "25 min",
+      videoUrl: "https://www.youtube.com/embed/uI2xt8nTOlQ",
     },
+
     {
-      title: "Transistor basics and types",
+      title:
+        "Methods to solve non-homogeneous second-order differential equations",
       type: "Video",
-      duration: "18 min",
-      videoUrl: "https://www.youtube.com/embed/J4oO7PT_nzQ",
+      duration: "25 min",
+      videoUrl: "https://www.youtube.com/embed/AMuPDHj6t3A",
     },
     {
-      title: "How Zener diodes work",
+      title: "What is a line integral?",
       type: "Video",
-      duration: "11 min",
-      videoUrl: "https://www.youtube.com/embed/mmiHX_IzvDw",
+      duration: "13 min",
+      videoUrl: "https://www.youtube.com/embed/Tz14rC0XvHI",
     },
     {
-        title: "Half-wave and full-wave rectifier circuits",
-        type: "Video",
-        duration: "14 min",
-        videoUrl: "https://www.youtube.com/embed/joDlqsknn-w",
-      },
-      {
-        title: "What is a Field Effect Transistor (FET)?",
-        type: "Video",
-        duration: "8 min",
-        videoUrl: "https://www.youtube.com/embed/cOICDYuY-gA",
-      },
-      {
-        title: "Open vs. closed loop control systems",
-        type: "Video",
-        duration: "11 min",
-        videoUrl: "https://www.youtube.com/embed/XMfH2P2Fc6Q",
-      },
-      {
-        title: "Open vs. closed loop control systems 2",
-        type: "Video",
-        duration: "4 min",
-        videoUrl: "https://www.youtube.com/embed/DE0hWLdkckg",
-      },
-      {
-        title: "Open vs. closed loop control systems 3",
-        type: "Video",
-        duration: "5 min",
-        videoUrl: "https://www.youtube.com/embed/8m0VP5_feOY",
-      },
+      title: "Differentiation of Integral",
+      type: "Video",
+      duration: "14 min",
+      videoUrl: "https://www.youtube.com/embed/AdLAkD-r9Rs",
+    },
+    {
+      title: "Analytical functions of complex variables",
+      type: "Video",
+      duration: "1hr 23 min",
+      videoUrl: "https://www.youtube.com/embed/OQz1ydBcQSA",
+    },
+    {
+      title: "Understanding the Cauchy-Riemann equations",
+      type: "Video",
+      duration: "19 min",
+      videoUrl: "https://www.youtube.com/embed/OfN9QG0zCXg",
+    },
   ];
 
   const handleVideoToggle = (index) => {
@@ -145,13 +116,13 @@ const CourseList = () => {
         </div>
         <div className="course-buttons col-6">
           <button
-            className="btn  active btn-outline-light"
+            className="btn"
             onClick={() => handleCourseButtonClick("EEE212")}
           >
             EEE212
           </button>
           <button
-            className="btn"
+            className="btn active btn-outline-light"
             onClick={() => handleCourseButtonClick("EMA212")}
           >
             EMA212
@@ -173,13 +144,13 @@ const CourseList = () => {
             <h4>
               <b>MEE212</b>
             </h4>
-            <h5>Electrical Engineering 2</h5>
+            <h5>Engineering Mathematics 2</h5>
             <p>
-              Welcome to Electrical Engineering 2, a continuation of your
-              foundational studies in electrical engineering. This course will
-              delve into complex circuits, network theorems, and the behavior of
-              AC and DC systems to enhance your analytical and problem-solving
-              skills.
+              Welcome to Engineering Mathematics 2, where you will tackle
+              advanced mathematical concepts essential for engineering
+              applications. This course covers second-order differential
+              equations, multiple integrals, and functions of complex variables,
+              preparing you for complex problem-solving in engineering.
             </p>
           </div>
 
@@ -246,37 +217,31 @@ const CourseList = () => {
             </div>
           </div>
         </div>
+        
       </div>
-      <div
-        className="container text-center d-flex flex-column justify-content-center align-items-center"
-        style={{ padding: "20px" }}
-      >
-        <p style={{ fontSize: "16px", fontWeight: "600", color: "white" }}>
-          Do you have a topic you'd like us to add that isn't covered yet? Click
-          below to let us know!
-        </p>
+      <div className="container text-center d-flex flex-column justify-content-center align-items-center" style={{ padding: "20px" }}>
+  <p style={{ fontSize: "16px", fontWeight: "600", color: "white" }}>
+    Do you have a topic you'd like us to add that isn't covered yet? Click below to let us know!
+  </p>
+  
+  <a href="https://forms.gle/o5jQA5jbegCBAKSB6 " target="_blank" rel="noopener noreferrer">
+  <button
+    className="btn"
+    style={{
+      backgroundColor: "#FF944D",
+      color: "black",
+      fontSize: "20px",
+      padding: "12px 24px",
+      borderRadius: "8px",
+      marginTop: "20px",
+      fontWeight: 500,
+    }}
+  >
+    Request a New Topic
+  </button>
+</a>
+</div>
 
-        <a
-          href="https://forms.gle/o5jQA5jbegCBAKSB6 "
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button
-            className="btn"
-            style={{
-              backgroundColor: "#FF944D",
-              color: "black",
-              fontSize: "20px",
-              padding: "12px 24px",
-              borderRadius: "8px",
-              marginTop: "20px",
-              fontWeight: 500,
-            }}
-          >
-            Request a New Topic
-          </button>
-        </a>
-      </div>
     </div>
   );
 };

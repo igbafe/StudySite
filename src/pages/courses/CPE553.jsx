@@ -38,7 +38,6 @@ const Courses = () => {
       setLoadingSend(false);
     }
   };
-  
 
   // Function to fetch data (for 'Answer Past Questions' button)
   const handleFetchData = async () => {
@@ -88,23 +87,16 @@ const Courses = () => {
 
   return (
     <div>
+      <div className=" dept mt-3  col-md-3"> Computer Engineering 500l</div>
       <div className="Header mt-3 justify-content-center">
-      <div className="content-header header-container col-md-3" >
-      <div className="dropdown">
-      <div className="dropdown-btn" onClick={toggleDropdown}>
-        LEVEL
-        <span>{isOpen ? '▲' : '▼'}</span>
-
-      </div>
-      {isOpen && (
-        <div className="dropdown-content">
-           <Link
-                  to="/CPE100"
-                  className="dropdown-item"
-                  onClick={toggleDropdown}
-                >
-                  CPE100
-                </Link>
+        <div className="content-header header-container col-md-3">
+          <div className="dropdown">
+            <div className="dropdown-btn" onClick={toggleDropdown}>
+              LEVEL
+              <span>{isOpen ? "▲" : "▼"}</span>
+            </div>
+            {isOpen && (
+              <div className="dropdown-content">
                 <Link
                   to="/CPE200"
                   className="dropdown-item"
@@ -119,24 +111,17 @@ const Courses = () => {
                 >
                   CPE300
                 </Link>
+
                 <Link
                   to="/CPE500"
                   className="dropdown-item"
                   onClick={toggleDropdown}
                 >
-                  CPE400
-                </Link>
-                <Link
-                  to="/CPE400"
-                  className="dropdown-item"
-                  onClick={toggleDropdown}
-                >
                   CPE500
                 </Link>
-        </div>
-      )}
-    </div>
-          
+              </div>
+            )}
+          </div>
         </div>
         <div className="course-buttons col-6">
           <button
@@ -219,14 +204,14 @@ const Courses = () => {
               </div>
             </div>
             <div className="col-md-6 course-des justify-content-center">
-            <h4>
+              <h4>
                 <b>CPE 551</b>
               </h4>
               <h5>Digital Signal Processing</h5>
               <p>
-                This is an introduction video to your course CPE 551(Digital Signal Processing) Access
-                other lecture videos once you're done with the introductory
-                video.
+                This is an introduction video to your course CPE 551(Digital
+                Signal Processing) Access other lecture videos once you're done
+                with the introductory video.
               </p>
             </div>
           </div>

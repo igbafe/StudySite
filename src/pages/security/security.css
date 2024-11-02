@@ -1,132 +1,108 @@
 /* security.css */
 
+
+
 .section-title {
-  background-color: #ff8c66;
-  color: black;
-  font-size: 36px;
-  padding: 10px;
-  margin-top: 5px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  width: 360px;
-  height: 60px;
-  font-weight: bold;
-  text-align: center;
+    background-color: #ff8c66;
+    color: black;
+    font-size: 36px;
+    padding: 10px;
+    margin-top: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 360px;
+    height: 60px;
+    font-weight: bold;
+    text-align: center;
 }
 
-/* Default margin for larger screens */
-.container {
-  margin-bottom: 60px; /* Adds space at the bottom */
-}
+
 
 .card-container {
-  display: grid;
-  grid-template-columns: 1fr; /* Default to single column on small screens */
-  gap: 20px;
-  justify-content: center;
-}
-
-@media (min-width: 768px) {
-  .card-container {
-      grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
-  }
-}
-
-@media (min-width: 1024px) {
-  .card-container {
-      grid-template-columns: repeat(3, 1fr); /* Three columns for desktops */
-  }
+    display: grid;
+    grid-template-columns: repeat(2, 378px);
+    grid-gap: 35px;
+    justify-content: center;
 }
 
 .info-card-wrapper {
-  background-color: inherit; /* Inherits the background color from the container */
+     background-color: inherit; /*Inherits the background color from the container */
 }
 
 .info-card {
-  background-color: #ffffff !important;
-  color: #2C2B2A;
-  border-radius: 30px;
-  padding: 40px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    background-color: #ffffff !important; /* White background with high specificity */
+    color: #2C2B2A; 
+    border-radius: 30px;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .info-card button {
-  background-color: #323020;
-  color: #fff;
-  border: none;
-  padding: 15px 10px; /* Adjusted padding for smaller screens */
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 10px;
-  font-size: clamp(0.9rem, 1.2vw, 1.5rem); /* Responsive font size */
+    background-color: #323020;
+    color: #fff;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 .info-card button:hover {
-  background-color: #ff704d;
+    background-color: #ff704d;
 }
-
+/* * {
+    background-color: #1a1807;
+} */
 .btncustom {
-  color: #222222;
-  border-radius: 25px;
-  margin: 0px 20px;
-  width: 551px;
-  height: 60px;
-  font-size: clamp(1.5rem, 1.7vw, 0.5rem);
-  font-weight: bold;
-  justify-content: center;
+    /* background-color: #ff8c66; */
+    color: #222222;
+    border-radius: 25px;
+    margin: 0px 20px;
+    width: 551px;
+    height: 60px;
+    /* font-size: 24px; */
+    font-size: clamp(1.5rem, 1.7vw, 0.5rem);
+    font-weight: bold;
+    justify-content: center;
 }
-
 .btn1 {
-  background-color: #ff8c66;
+    background-color: #ff8c66;
 }
-
 .btn2 {
-  background-color: #2C2B2A;
+    background-color: #2C2B2A;
 }
 
-/* Desktop and larger screens */
-@media (min-width: 768px) {
-  .btncustom {
+  /* Desktop and larger screens */
+  @media (min-width: 768px) {
+    .btncustom {
       width: 551px;
       height: 60px;
       margin: 0px 20px;
+    }
   }
-}
-
-/* Tablet screens */
-@media (min-width: 480px) and (max-width: 767px) {
-  .btncustom {
+  
+  /* Tablet screens */
+  @media (min-width: 480px) and (max-width: 767px) {
+    .btncustom {
       width: 45%;
       height: 70px;
       margin: 10px 10px;
+      margin: 10px 10px;
+    }
   }
-  /* Increase bottom margin for tablet screens */
-  .container {
-      margin-bottom: 150px; /* Adds more space above the footer */
-  }
-}
-
-/* Phone screens */
-@media (max-width: 479px) {
-  .btncustom {
+  
+  /* Phone screens */
+  @media (max-width: 479px) {
+    .btncustom {
       width: 100%;
       height: 100px;
       margin: 10px 0px;
+    }
   }
   
-  /* Adjust padding for info-card on smaller screens */
-  .info-card {
-      padding: 20px;
-  }
-
-  /* Increase bottom margin for mobile screens */
-  .container {
-      margin-bottom: 340px; /* Adds even more space above the footer */
-  }
-}
