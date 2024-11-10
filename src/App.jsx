@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React from "react";
 // import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Mainlayout from './layouts/Mainlayout';
@@ -17,11 +16,9 @@ import ComingSoon from './pages/comingsoon/comingsoon';
 import CPE500 from './pages/courses/CPE500';
 import CPE531 from './pages/courses/CPE531';
 import CPE553 from './pages/courses/CPE553';
-import Marketplace from './pages/marketplace/marketplace';
 // import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 // import { ClerkProvider } from '@clerk/clerk-react';
 export function App() {
- 
   return (
     // <ClerkProvider publishableKey="pk_test_ZW5hYmxpbmctbWFjYXctMjguY2xlcmsuYWNjb3VudHMuZ">
     <Router>
@@ -41,7 +38,6 @@ export function App() {
           <Route path='CPE500' element={<CPE500 />} />
           <Route path='CPE531' element={<CPE531 />} />
           <Route path='CPE553' element={<CPE553 />} />
-          <Route path='Marketplace' element={<Marketplace />} />
         </Route>
       </Routes>
       </Exampleprovider>
@@ -50,4 +46,4 @@ export function App() {
   );
 }
 
-export default App;
+export default App;
