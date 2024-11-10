@@ -119,9 +119,18 @@ const Courses = () => {
                 >
                   CPE500
                 </Link>
-              </div>
-            )}
-          </div>
+             
+                <Link
+                  to="/CPE500"
+                  className="dropdown-item"
+                  onClick={toggleDropdown}
+                >
+                  CPE500
+                </Link>
+        </div>
+      )}
+    </div>
+          
         </div>
         <div className="course-buttons col-6">
           <button

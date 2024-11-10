@@ -114,7 +114,6 @@ const Courses = () => {
                 >
                   CPE300
                 </Link>
-
                 <Link
                   to="/CPE500"
                   className="dropdown-item"

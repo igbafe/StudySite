@@ -33,6 +33,7 @@ const Courses = () => {
     <div>
       <div className=" dept mt-3  col-md-3"> Computer Engineering 300l</div>
       <div className="Header mt-3 justify-content-center">
+        
         <div className="content-header header-container col-md-3">
           <div className="dropdown">
             <div className="dropdown-btn" onClick={toggleDropdown}>
@@ -41,6 +42,13 @@ const Courses = () => {
             </div>
             {isOpen && (
               <div className="dropdown-content">
+                <Link
+                  to="/CPE100"
+                  className="dropdown-item"
+                  onClick={toggleDropdown}
+                >
+                  CPE100
+                </Link>
                 <Link
                   to="/CPE200"
                   className="dropdown-item"
@@ -58,6 +66,13 @@ const Courses = () => {
 
                 <Link
                   to="/CPE500"
+                  className="dropdown-item"
+                  onClick={toggleDropdown}
+                >
+                  CPE400
+                </Link>
+                <Link
+                  to="/CPE400"
                   className="dropdown-item"
                   onClick={toggleDropdown}
                 >

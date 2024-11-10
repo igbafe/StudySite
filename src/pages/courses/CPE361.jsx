@@ -56,6 +56,13 @@ const Courses = () => {
                   className="dropdown-item"
                   onClick={toggleDropdown}
                 >
+                  CPE400
+                </Link>
+                <Link
+                  to="/CPE400"
+                  className="dropdown-item"
+                  onClick={toggleDropdown}
+                >
                   CPE500
                 </Link>
               </div>

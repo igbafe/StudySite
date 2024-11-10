@@ -99,7 +99,6 @@ const Courses = () => {
       </div>
       {isOpen && (
         <div className="dropdown-content">
-           
                 <Link
                   to="/CPE200"
                   className="dropdown-item"
