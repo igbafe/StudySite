@@ -74,27 +74,35 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className="nav-link p-1">
-          <NavLink
+            <NavLink
               className={({ isActive }) =>
                 isActive ? "active nav-link" : "nav-link"
               }
-              to={"/DigitalSkills"}
+              to={"/comingsoon"}
             >
               DigitalSkills
             </NavLink>
           </li>
+          <li className="nav-link p-1">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "active nav-link" : "nav-link"
+              }
+              to={"/marketplace"}
+            >
+              Marketplace
+            </NavLink>
+          </li>
           <div>
-        <NavLink
-          to={"/Register"}
-          className={"btn btn-warning btn-get-started ml-auto"}
-        >
-          Login / Sign Up
-        </NavLink>
-      </div>
+            <NavLink
+              to={"/Register"}
+              className={"btn btn-warning btn-get-started ml-auto"}
+            >
+              Login / Sign Up
+            </NavLink>
+          </div>
         </ul>
       </div>
-      
-      
     </nav>
   );
 };
