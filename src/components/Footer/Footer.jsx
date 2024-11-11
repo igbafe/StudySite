@@ -71,8 +71,8 @@ function Footer() {
           <p className=" lg:text-base md:text-xs">
             Adress: University of Benin, Edo, Lagos
           </p>
-          <p className=" lg:text-base md:text-xs">Phone No: +2348134383290</p>
-          <p className=" lg:text-base md:text-xs">Email: peters@gmail.com</p>
+          <p className=" lg:text-base md:text-xs">Phone No: +2347049831780</p>
+          <p className=" lg:text-base md:text-xs">Email: studyboosta@gmail.com</p>
         </div>
       </div>
       <div className="lg:pl-20 pl-12 text-white p-3 bg-black">
