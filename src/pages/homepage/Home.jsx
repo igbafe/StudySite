@@ -1,5 +1,5 @@
 import React from "react";
-import pict1 from "../../components/assets/images/study.jpg";
+import pict1 from "../../components/assets/images/read.jpg";
 import { FaBookOpen, FaBrain, FaBriefcase } from "react-icons/fa";
 
 const HomePage = () => {
